@@ -71,7 +71,7 @@ getNetworkIP(function (error, ip) {
 
 function runServer(ip) {
   console.log('ip = ', ip);
-  var audioSrc = 'audio/test.mp3';
+  var audioSrc = 'audio/test.ogg';
   var clients = [];
   var server = http.createServer(function(req, res) {
     paperboy.deliver(path.dirname(__filename), req, res);
